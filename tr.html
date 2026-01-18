@@ -24,25 +24,24 @@
     }
     header {
       background: linear-gradient(to bottom, #1a1a20, #0f0f14);
-      padding: 20px 0;
+      padding: 30px 0 20px;
       text-align: center;
-      border-bottom: 2px solid #ff6200;
+      border-bottom: 3px solid #ff6200;
     }
-    .logo {
-      font-size: 3.8rem;
-      font-weight: 800;
-      background: linear-gradient(90deg, #ff8c00, #ff6200);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 8px;
+    .logo-img {
+      max-width: 320px; /* Logo boyutunu burdan ayarla, istersen büyüt/küçült */
+      height: auto;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 4px 12px rgba(255,98,0,0.5));
     }
     .slogan {
-      font-size: 1.35rem;
+      font-size: 1.4rem;
       color: #ff8c00;
       font-weight: 600;
+      margin-top: 5px;
     }
     .banner-area {
-      margin: 35px 0;
+      margin: 40px 0;
       text-align: center;
     }
     .big-btn {
@@ -110,7 +109,7 @@
       border-top: 1px solid #222;
     }
     @media (max-width: 640px) {
-      .logo { font-size: 2.9rem; }
+      .logo-img { max-width: 260px; }
       .big-btn { font-size: 1.7rem; padding: 22px 30px; }
       h2 { font-size: 1.9rem; }
     }
@@ -122,7 +121,7 @@
   
     <header>
       <div class="wrapper">
-        <div class="logo">T<span style="color:#ff8c00;">imebet</span></div>
+        <img src="https://tr.timebetresmi-girisyap.com/Timebet-logo.png" alt="Timebet Logo" class="logo-img">
         <div class="slogan">Timebet Giriş - Güncel Adres | Hoş Geldin Bonusları Seni Bekliyor!</div>
       </div>
     </header>
@@ -173,7 +172,7 @@
       window.location.href = url;
     });
 
-    // İsteğe bağlı: 4 sn sonra otomatik yönlendir
+    // İsteğe bağlı otomatik yönlendirme: 4 sn sonra
     // setTimeout(() => { window.location.href = url; }, 4000);
   </script>
 
